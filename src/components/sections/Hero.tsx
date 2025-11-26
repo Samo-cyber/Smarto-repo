@@ -35,10 +35,10 @@ export const Hero = () => {
                 </div>
                 <div className={styles.imageWrapper}>
                     <Image
-                        src="/assets/hero.png"
-                        alt="Smarto Team"
-                        width={600}
-                        height={500}
+                        src="/assets/hero-main.svg"
+                        alt="Smarto Digital Solutions"
+                        width={800}
+                        height={600}
                         className={styles.image}
                         priority
                     />

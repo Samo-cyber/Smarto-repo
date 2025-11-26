@@ -1,0 +1,96 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient circles -->
+  <circle cx="650" cy="150" r="120" fill="#0F5CBA" opacity="0.08"/>
+  <circle cx="150" cy="450" r="100" fill="#1DBF8A" opacity="0.08"/>
+  <circle cx="700" cy="500" r="80" fill="#8A3DD9" opacity="0.08"/>
+  
+  <!-- Main illustration - Digital transformation concept -->
+  
+  <!-- Central rocket/growth symbol -->
+  <g transform="translate(400, 250)">
+    <!-- Rocket body -->
+    <path d="M -30 50 L -30 -80 L 0 -120 L 30 -80 L 30 50 Z" fill="url(#gradient1)"/>
+    <circle cx="0" cy="-60" r="15" fill="white" opacity="0.3"/>
+    
+    <!-- Rocket flames -->
+    <ellipse cx="-20" cy="50" rx="15" ry="30" fill="#F59E0B" opacity="0.6"/>
+    <ellipse cx="0" cy="60" rx="18" ry="40" fill="#EF4444" opacity="0.7"/>
+    <ellipse cx="20" cy="50" rx="15" ry="30" fill="#F59E0B" opacity="0.6"/>
+    
+    <!-- Rocket fins -->
+    <path d="M -30 20 L -60 50 L -30 40 Z" fill="#0D3E7A"/>
+    <path d="M 30 20 L 60 50 L 30 40 Z" fill="#0D3E7A"/>
+    
+    <!-- Window -->
+    <circle cx="0" cy="-40" r="20" fill="#E0F2FE"/>
+    <circle cx="0" cy="-40" r="15" fill="#0F5CBA" opacity="0.2"/>
+  </g>
+  
+  <!-- Floating tech icons around rocket -->
+  
+  <!-- Code brackets -->
+  <g transform="translate(200, 200)">
+    <path d="M 0 -20 L -15 0 L 0 20" stroke="#0F5CBA" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 30 -20 L 45 0 L 30 20" stroke="#0F5CBA" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Mobile phone -->
+  <g transform="translate(580, 280)">
+    <rect x="-25" y="-40" width="50" height="80" rx="8" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+    <rect x="-20" y="-35" width="40" height="60" rx="4" fill="#1DBF8A" opacity="0.2"/>
+    <circle cx="0" cy="30" r="6" fill="#E5E7EB"/>
+  </g>
+  
+  <!-- Chart/Analytics -->
+  <g transform="translate(250, 380)">
+    <rect x="0" y="30" width="12" height="30" rx="2" fill="#1DBF8A" opacity="0.6"/>
+    <rect x="18" y="20" width="12" height="40" rx="2" fill="#1DBF8A" opacity="0.8"/>
+    <rect x="36" y="10" width="12" height="50" rx="2" fill="#1DBF8A"/>
+    <rect x="54" y="25" width="12" height="35" rx="2" fill="#1DBF8A" opacity="0.7"/>
+  </g>
+  
+  <!-- Gear/Settings -->
+  <g transform="translate(550, 150)">
+    <circle cx="0" cy="0" r="25" fill="#8A3DD9" opacity="0.2"/>
+    <circle cx="0" cy="0" r="15" fill="white"/>
+    <circle cx="0" cy="0" r="8" fill="#8A3DD9"/>
+    <rect x="-3" y="-30" width="6" height="10" rx="2" fill="#8A3DD9"/>
+    <rect x="-3" y="20" width="6" height="10" rx="2" fill="#8A3DD9"/>
+    <rect x="-30" y="-3" width="10" height="6" rx="2" fill="#8A3DD9"/>
+    <rect x="20" y="-3" width="10" height="6" rx="2" fill="#8A3DD9"/>
+  </g>
+  
+  <!-- Cloud -->
+  <g transform="translate(180, 120)">
+    <ellipse cx="0" cy="0" rx="30" ry="20" fill="#0F5CBA" opacity="0.15"/>
+    <ellipse cx="-20" cy="5" rx="20" ry="15" fill="#0F5CBA" opacity="0.15"/>
+    <ellipse cx="20" cy="5" rx="25" ry="18" fill="#0F5CBA" opacity="0.15"/>
+  </g>
+  
+  <!-- Stars/Sparkles -->
+  <g transform="translate(320, 120)">
+    <path d="M 0 -10 L 2 -2 L 10 0 L 2 2 L 0 10 L -2 2 L -10 0 L -2 -2 Z" fill="#F59E0B"/>
+  </g>
+  
+  <g transform="translate(480, 400)">
+    <path d="M 0 -8 L 1.5 -1.5 L 8 0 L 1.5 1.5 L 0 8 L -1.5 1.5 L -8 0 L -1.5 -1.5 Z" fill="#1DBF8A"/>
+  </g>
+  
+  <g transform="translate(650, 320)">
+    <path d="M 0 -12 L 2.5 -2.5 L 12 0 L 2.5 2.5 L 0 12 L -2.5 2.5 L -12 0 L -2.5 -2.5 Z" fill="#8A3DD9"/>
+  </g>
+  
+  <!-- Connection lines/network -->
+  <line x1="400" y1="130" x2="550" y2="150" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="370" y1="200" x2="245" y2="200" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="430" y1="250" x2="555" y2="280" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F5CBA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1DBF8A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8A3DD9;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+</svg>
