@@ -1,0 +1,103 @@
+.section {
+    padding: 5rem 0;
+    background: white;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-heading);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.pricingCard {
+    padding: 2.5rem 2rem;
+    background: white;
+    border: 2px solid #E5E7EB;
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pricingCard:hover {
+    border-color: var(--brand-start);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(15, 92, 186, 0.15);
+}
+
+.recommended {
+    border-color: var(--brand-start);
+    background: linear-gradient(135deg, rgba(15, 92, 186, 0.03), rgba(29, 191, 138, 0.03));
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 50%;
+    transform: translateX(50%);
+    background: linear-gradient(135deg, var(--brand-start), var(--brand-mid));
+    color: white;
+    padding: 0.375rem 1rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.planName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-heading);
+}
+
+.planDesc {
+    font-size: 0.875rem;
+    color: var(--text-body);
+    margin-bottom: 1.5rem;
+}
+
+.planPrice {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--brand-start);
+    margin-bottom: 2rem;
+}
+
+.ctaButton {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--brand-start), var(--brand-mid));
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(15, 92, 186, 0.3);
+}

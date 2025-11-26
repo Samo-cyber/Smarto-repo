@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 
 export default function RootLayout({
@@ -34,6 +35,7 @@ export default function RootLayout({
         {children}
         <FloatingWhatsApp />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

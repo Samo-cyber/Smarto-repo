@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Check } from 'lucide-react';
+import styles from './ServicePricing.module.css';
 
 interface PricingPlan {
     name: string;
@@ -13,46 +13,18 @@ interface ServicePricingProps {
 
 export const ServicePricing = ({ plans }: ServicePricingProps) => {
     return (
-        <section className="py-20 bg-white">
-            <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold mb-4">باقات الأسعار</h2>
-                    <p className="text-gray-600">اختر الباقة المناسبة لميزانيتك واحتياجاتك</p>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <section className={styles.section}>
+            <div className={styles.container}>
+                <h2 className={styles.title}>الباقات والأسعار</h2>
+                <div className={styles.grid}>
                     {plans.map((plan, index) => (
-                        <div
-                            key={index}
-                            className={`relative p-8 rounded-3xl border ${index === 1
-                                    ? 'border-primary bg-primary/5 shadow-xl scale-105 z-10'
-                                    : 'border-gray-100 bg-white hover:shadow-lg transition-shadow'
-                                }`}
-                        >
-                            {index === 1 && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold">
-                                    الأكثر طلباً
-                                </div>
-                            )}
-
-                            <div className="text-center mb-8">
-                                <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-                                <p className="text-gray-500 text-sm mb-6">{plan.desc}</p>
-                                <div className="text-4xl font-bold text-primary">
-                                    {plan.price}
-                                </div>
-                            </div>
-
-                            <div className="border-t border-gray-100 my-8" />
-
-                            <Link
-                                href="/contact"
-                                className={`block w-full py-4 rounded-xl text-center font-bold transition-colors ${index === 1
-                                        ? 'bg-primary text-white hover:bg-primary-dark'
-                                        : 'bg-gray-50 text-gray-900 hover:bg-gray-100'
-                                    }`}
-                            >
-                                اطلب الباقة
+                        <div key={index} className={`${styles.pricingCard} ${index === 1 ? styles.recommended : ''}`}>
+                            {index === 1 && <span className={styles.badge}>الأكثر طلباً</span>}
+                            <h3 className={styles.planName}>{plan.name}</h3>
+                            <p className={styles.planDesc}>{plan.desc}</p>
+                            <div className={styles.planPrice}>{plan.price}</div>
+                            <Link href="/contact">
+                                <button className={styles.ctaButton}>اطلب عرض سعر</button>
                             </Link>
                         </div>
                     ))}

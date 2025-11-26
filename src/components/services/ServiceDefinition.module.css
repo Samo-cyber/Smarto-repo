@@ -1,0 +1,58 @@
+.section {
+    padding: 5rem 0;
+    background: white;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.content {
+    max-width: 56rem;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.description {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-body);
+    margin-bottom: 3rem;
+}
+
+.problemsTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 1.5rem;
+}
+
+.problemsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.problemItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(220, 38, 38, 0.05));
+    border-radius: var(--radius-md);
+    border-right: 4px solid #EF4444;
+}
+
+.problemIcon {
+    flex-shrink: 0;
+    color: #EF4444;
+    margin-top: 0.25rem;
+}
+
+.problemText {
+    font-size: 1rem;
+    color: var(--text-heading);
+    line-height: 1.6;
+}
