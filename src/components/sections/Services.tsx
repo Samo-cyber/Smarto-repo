@@ -36,7 +36,7 @@ export const Services = () => {
                                 </div>
                                 <h3 className={styles.cardTitle}>{service.title}</h3>
                                 <p className={styles.cardDesc}>{service.desc}</p>
-                                <Link href={`/services#${service.id}`} className={styles.link}>اعرف المزيد &larr;</Link>
+                                <Link href={`/services/${service.id}`} className={styles.link}>اعرف المزيد &larr;</Link>
                             </Card>
                         );
                     })}
