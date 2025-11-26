@@ -1,0 +1,44 @@
+<svg width="600" height="500" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <circle cx="480" cy="100" r="80" fill="#1DBF8A" opacity="0.1"/>
+  <circle cx="120" cy="400" r="60" fill="#0F5CBA" opacity="0.1"/>
+  
+  <!-- Browser window -->
+  <rect x="100" y="80" width="400" height="320" rx="12" fill="white" stroke="#E5E7EB" stroke-width="3"/>
+  
+  <!-- Browser header -->
+  <rect x="100" y="80" width="400" height="40" rx="12" fill="#F3F4F6"/>
+  <circle cx="120" cy="100" r="6" fill="#EF4444"/>
+  <circle cx="140" cy="100" r="6" fill="#F59E0B"/>
+  <circle cx="160" cy="100" r="6" fill="#10B981"/>
+  
+  <!-- Product grid -->
+  <g transform="translate(120, 140)">
+    <!-- Product 1 -->
+    <rect x="0" y="0" width="110" height="110" rx="8" fill="#E5E7EB"/>
+    <rect x="10" y="120" width="90" height="8" rx="4" fill="#6B7280"/>
+    <rect x="10" y="135" width="60" height="12" rx="4" fill="#1DBF8A"/>
+    
+    <!-- Product 2 -->
+    <rect x="130" y="0" width="110" height="110" rx="8" fill="#E5E7EB"/>
+    <rect x="140" y="120" width="90" height="8" rx="4" fill="#6B7280"/>
+    <rect x="140" y="135" width="60" height="12" rx="4" fill="#1DBF8A"/>
+    
+    <!-- Product 3 -->
+    <rect x="260" y="0" width="110" height="110" rx="8" fill="#E5E7EB"/>
+    <rect x="270" y="120" width="90" height="8" rx="4" fill="#6B7280"/>
+    <rect x="270" y="135" width="60" height="12" rx="4" fill="#1DBF8A"/>
+  </g>
+  
+  <!-- Shopping cart -->
+  <g transform="translate(480, 320)">
+    <circle cx="0" cy="0" r="40" fill="#1DBF8A" opacity="0.2"/>
+    <path d="M -15 -10 L -10 -10 L -5 10 L 10 10" stroke="#1DBF8A" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="-2" cy="15" r="3" fill="#1DBF8A"/>
+    <circle cx="8" cy="15" r="3" fill="#1DBF8A"/>
+  </g>
+  
+  <!-- Payment icons -->
+  <rect x="520" y="180" width="50" height="35" rx="4" fill="#0F5CBA" opacity="0.2"/>
+  <rect x="530" y="190" width="30" height="15" rx="2" fill="#0F5CBA"/>
+</svg>

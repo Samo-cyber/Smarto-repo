@@ -1,0 +1,36 @@
+<svg width="600" height="500" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <circle cx="480" cy="100" r="80" fill="#8A3DD9" opacity="0.1"/>
+  <circle cx="120" cy="400" r="60" fill="#0F5CBA" opacity="0.1"/>
+  
+  <!-- Color palette -->
+  <circle cx="150" cy="150" r="50" fill="#8A3DD9"/>
+  <circle cx="250" cy="150" r="50" fill="#0F5CBA"/>
+  <circle cx="350" cy="150" r="50" fill="#1DBF8A"/>
+  <circle cx="450" cy="150" r="50" fill="#F59E0B"/>
+  
+  <!-- Logo shapes -->
+  <g transform="translate(200, 250)">
+    <!-- Abstract logo 1 -->
+    <circle cx="0" cy="0" r="40" fill="#8A3DD9" opacity="0.3"/>
+    <path d="M -20 0 L 0 -30 L 20 0 Z" fill="#8A3DD9"/>
+  </g>
+  
+  <g transform="translate(350, 280)">
+    <!-- Abstract logo 2 -->
+    <rect x="-35" y="-35" width="70" height="70" rx="12" fill="#0F5CBA" opacity="0.3"/>
+    <circle cx="0" cy="0" r="25" fill="#0F5CBA"/>
+  </g>
+  
+  <!-- Typography samples -->
+  <rect x="100" y="380" width="180" height="12" rx="6" fill="#1F2937" opacity="0.3"/>
+  <rect x="100" y="400" width="140" height="10" rx="5" fill="#6B7280" opacity="0.3"/>
+  <rect x="100" y="418" width="160" height="8" rx="4" fill="#9CA3AF" opacity="0.3"/>
+  
+  <!-- Design tools -->
+  <circle cx="500" cy="350" r="35" fill="#1DBF8A" opacity="0.2"/>
+  <path d="M 480 350 L 500 330 L 520 350 L 500 370 Z" fill="#1DBF8A"/>
+  
+  <!-- Pen tool icon -->
+  <path d="M 80 280 L 100 260 L 120 280 L 100 300 Z" fill="#8A3DD9" opacity="0.5"/>
+</svg>
