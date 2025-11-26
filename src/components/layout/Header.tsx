@@ -26,7 +26,7 @@ export const Header = () => {
             <div className={`container ${styles.container}`}>
                 <Link href="/" className={styles.logo}>
                     <Image
-                        src="/assets/logo.png"
+                        src="/assets/smarto-logo.png"
                         alt={identity.company_name}
                         width={160}
                         height={53}

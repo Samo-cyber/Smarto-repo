@@ -26,7 +26,7 @@ export const Footer = () => {
                 <div className={styles.top}>
                     <div className={styles.brand}>
                         <Image
-                            src="/assets/logo-white.png"
+                            src="/assets/smarto-logo-white.png"
                             alt={identity.company_name}
                             width={180}
                             height={60}
