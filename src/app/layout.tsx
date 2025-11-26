@@ -20,6 +20,8 @@ export const metadata: Metadata = {
 };
 
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
+import { Analytics } from '@vercel/analytics/next';
+
 
 export default function RootLayout({
   children,
@@ -31,6 +33,7 @@ export default function RootLayout({
       <body className={`${cairo.variable} ${inter.variable}`}>
         {children}
         <FloatingWhatsApp />
+        <Analytics />
       </body>
     </html>
   );
