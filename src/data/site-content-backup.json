@@ -1,0 +1,34 @@
+{
+    "meta": {
+        "generated_for": "tech_solutions_company_website",
+        "description": "Smarto - Complete site content with all 6 service pages",
+        "version": "2.0",
+        "language": "ar",
+        "direction": "rtl"
+    },
+    "identity": {
+        "site_name": "smarto-tech",
+        "company_name": "Smarto",
+        "logo_url": "public/assets/logo.png",
+        "tagline": "حلول رقمية مبتكرة لتسريع أعمالك"
+    },
+    "theme": {
+        "primary_colors": {
+            "brand_start": "#0F5CBA",
+            "brand_mid": "#1DBF8A",
+            "brand_end": "#8A3DD9",
+            "brand_dark": "#0D3E7A",
+            "background": "#FFFFFF",
+            "surface": "#F6FBFF",
+            "muted_text": "#6B7280",
+            "heading": "#0F1724",
+            "accent": "#1DBF8A"
+        }
+    },
+    "components": {
+        "services_section": {
+            "layout": "grid-3-desktop, grid-1-mobile",
+            "services": []
+        }
+    }
+}

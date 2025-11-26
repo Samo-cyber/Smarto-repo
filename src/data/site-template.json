@@ -1,0 +1,104 @@
+{
+    "meta": {
+        "version": "2.0",
+        "language": "ar",
+        "direction": "rtl"
+    },
+    "identity": {
+        "site_name": "smarto-tech",
+        "company_name": "Smarto",
+        "logo_url": "public/assets/logo.png"
+    },
+    "theme": {
+        "primary_colors": {
+            "brand_start": "#0F5CBA",
+            "brand_mid": "#1DBF8A",
+            "brand_end": "#8A3DD9"
+        }
+    },
+    "components": {
+        "hero": {
+            "headline": "نحوّل أفكارك الرقمية إلى واقع يحقق النجاح",
+            "subheadline": "نصمم مواقع وتطبيقات احترافية، ونقدم حلول تسويق رقمي وأتمتة تدفع أعمالك للأمام",
+            "cta_text": "اطلب عرض سعر"
+        },
+        "services_section": {
+            "layout": "grid-3-desktop, grid-1-mobile",
+            "services": "SERVICES_PLACEHOLDER"
+        },
+        "portfolio": {
+            "layout": "masonry/grid gallery",
+            "items_per_page": 9,
+            "items": [
+                {
+                    "id": 1,
+                    "title": "منصة تعليمية ذكية",
+                    "category": "تطوير ويب",
+                    "image": "/assets/portfolio-edu-smart.png",
+                    "description": "منصة تعليمية متكاملة تدعم الفصول الافتراضية"
+                },
+                {
+                    "id": 2,
+                    "title": "تطبيق توصيل طلبات",
+                    "category": "تطبيقات موبايل",
+                    "image": "/assets/portfolio-edu.png",
+                    "description": "تطبيق للهواتف الذكية يربط المستخدمين بالمتاجر المحلية"
+                },
+                {
+                    "id": 3,
+                    "title": "لوحة تحكم مبيعات",
+                    "category": "أتمتة",
+                    "image": "/assets/portfolio-edu.png",
+                    "description": "لوحة تحكم تفاعلية تعرض تحليلات المبيعات"
+                }
+            ]
+        },
+        "pricing_plans": {
+            "layout": "cards grid",
+            "cta_text": "اطلب عرضًا مخصصًا",
+            "plans": [
+                {
+                    "name": "الباقة الأساسية",
+                    "price": "500$",
+                    "features": [
+                        "تصميم صفحة واحدة",
+                        "متجاوب مع الجوال",
+                        "دعم فني لمدة شهر"
+                    ],
+                    "recommended": false
+                },
+                {
+                    "name": "باقة الأعمال",
+                    "price": "1200$",
+                    "features": [
+                        "تصميم 5 صفحات",
+                        "لوحة تحكم",
+                        "SEO أساسي",
+                        "دعم فني 3 شهور"
+                    ],
+                    "recommended": true
+                },
+                {
+                    "name": "باقة الشركات",
+                    "price": "مخصص",
+                    "features": [
+                        "عدد صفحات غير محدود",
+                        "تطوير مخصص",
+                        "SEO متقدم",
+                        "دعم فني 24/7"
+                    ],
+                    "recommended": false
+                }
+            ]
+        },
+        "floating_buttons": {
+            "whatsapp": {
+                "enabled": true,
+                "position": "bottom-right",
+                "size": "56px",
+                "color": "#25D366",
+                "phone": "201007501816"
+            }
+        }
+    }
+}
