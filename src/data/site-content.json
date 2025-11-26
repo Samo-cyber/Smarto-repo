@@ -180,34 +180,40 @@
             },
             "services": [
                 {
-                    "id": "web",
-                    "title": "تصميم وتطوير مواقع",
+                    "id": "web-dev",
+                    "title": "تصميم وبرمجة مواقع ويب",
                     "desc": "مواقع سريعة، متوافقة مع السيو، وتجربة مستخدم حديثة",
-                    "icon": "web"
+                    "image": "/assets/service-web.png"
                 },
                 {
-                    "id": "mobile",
-                    "title": "تطبيقات موبايل",
-                    "desc": "تطبيقات Android & iOS بأداء عالٍ وتجربة native",
-                    "icon": "mobile"
+                    "id": "landing-page",
+                    "title": "تصميم لاندينج بيدج احترافية",
+                    "desc": "صفحات هبوط مصممة خصيصًا لزيادة معدلات التحويل والمبيعات",
+                    "image": "/assets/service-landing.png"
                 },
                 {
-                    "id": "design",
-                    "title": "تصميمات جرافيك",
-                    "desc": "هويات بصرية، واجهات، ومطبوعات جاهزة للطباعة",
-                    "icon": "design"
+                    "id": "branding",
+                    "title": "تصميم هوية بصرية ولوجو",
+                    "desc": "هويات بصرية مميزة تعكس قيم علامتك التجارية وتجذب جمهورك",
+                    "image": "/assets/service-branding.png"
                 },
                 {
-                    "id": "marketing",
-                    "title": "تسويق ديجيتال",
-                    "desc": "سوشيال أدفرتايزنج، إدارة حملات، SEO",
-                    "icon": "marketing"
+                    "id": "social-posts",
+                    "title": "تصميم بوستات سوشيال ميديا",
+                    "desc": "تصاميم إبداعية لمنصات التواصل الاجتماعي تزيد من تفاعل المتابعين",
+                    "image": "/assets/service-social-posts.png"
                 },
                 {
-                    "id": "automation",
-                    "title": "أتمتة وIntegrations",
-                    "desc": "أتمتة سير العمل وتكامل مع أنظمة الدفع وCRM",
-                    "icon": "automation"
+                    "id": "ecommerce",
+                    "title": "تطوير متاجر إلكترونية",
+                    "desc": "متاجر إلكترونية متكاملة وسهلة الاستخدام تدعم جميع بوابات الدفع",
+                    "image": "/assets/service-ecommerce.png"
+                },
+                {
+                    "id": "social-ads",
+                    "title": "إدارة السوشيال ميديا والإعلانات",
+                    "desc": "استراتيجيات تسويقية وإدارة حملات إعلانية لتحقيق أفضل النتائج",
+                    "image": "/assets/service-social-ads.png"
                 }
             ]
         },

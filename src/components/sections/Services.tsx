@@ -6,16 +6,7 @@ import { Card } from '../ui/Card';
 import styles from './Services.module.css';
 import content from '@/data/site-content.json';
 
-import { Globe, Smartphone, Palette, TrendingUp, Bot, Code, Zap } from 'lucide-react';
-
-const iconMap: { [key: string]: React.ElementType } = {
-    web: Globe,
-    mobile: Smartphone,
-    design: Palette,
-    marketing: TrendingUp,
-    automation: Bot,
-    default: Zap
-};
+import Image from 'next/image';
 
 export const Services = () => {
     const { components } = content;
@@ -31,11 +22,16 @@ export const Services = () => {
 
                 <div className={styles.grid}>
                     {services_section.services.map((service, index) => {
-                        const IconComponent = iconMap[service.icon] || iconMap.default;
                         return (
                             <Card key={service.id} className={styles.card}>
                                 <div className={styles.iconWrapper}>
-                                    <IconComponent size={48} strokeWidth={1.5} className={styles.icon} />
+                                    <Image
+                                        src={service.image}
+                                        alt={service.title}
+                                        width={80}
+                                        height={80}
+                                        className={styles.icon}
+                                    />
                                 </div>
                                 <h3 className={styles.cardTitle}>{service.title}</h3>
                                 <p className={styles.cardDesc}>{service.desc}</p>
