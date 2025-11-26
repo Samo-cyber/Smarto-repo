@@ -6,12 +6,20 @@ import { Footer } from '@/components/layout/Footer';
 import { PageHeader } from '@/components/ui/PageHeader';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import { CheckCircle, ArrowLeft } from 'lucide-react';
+import { CheckCircle, ArrowLeft, Monitor, LayoutTemplate, Palette, Image as ImageIcon, ShoppingCart, Megaphone } from 'lucide-react';
 import Link from 'next/link';
 import styles from './services.module.css';
 
 import content from '@/data/site-content.json';
-import Image from 'next/image';
+
+const iconMap: any = {
+    Monitor,
+    LayoutTemplate,
+    Palette,
+    Image: ImageIcon,
+    ShoppingCart,
+    Megaphone
+};
 
 export default function ServicesPage() {
     const { services } = content.components.services_section;
@@ -39,16 +47,11 @@ export default function ServicesPage() {
                     <div className="container">
                         <div className={styles.servicesGrid}>
                             {services.map((service, index) => {
+                                const IconComponent = iconMap[service.icon];
                                 return (
                                     <Card key={service.id} className={styles.serviceCard}>
-                                        <div className={styles.iconWrapper}>
-                                            <Image
-                                                src={service.image}
-                                                alt={service.title}
-                                                width={64}
-                                                height={64}
-                                                style={{ objectFit: 'contain' }}
-                                            />
+                                        <div className={styles.iconWrapper} style={{ color: service.color, background: `${service.color}15` }}>
+                                            {IconComponent && <IconComponent size={32} strokeWidth={1.5} />}
                                         </div>
                                         <h3 className={styles.serviceTitle}>{service.title}</h3>
                                         <p className={styles.serviceDesc}>{service.desc}</p>
