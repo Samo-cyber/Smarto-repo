@@ -44,6 +44,13 @@
     animation: float 6s ease-in-out infinite;
 }
 
+@media (max-width: 991px) {
+    .imageWrapper {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+
 .image {
     width: 100%;
     height: auto;
@@ -93,27 +100,27 @@
         padding: 0 20px;
     }
 
+    .headline {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
     .subheadline {
         margin-left: auto;
         margin-right: auto;
-        font-size: 16px;
-        margin-bottom: 24px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .actions {
         justify-content: center;
         flex-wrap: wrap;
     }
-
-    .headline {
-        font-size: 28px;
-        margin-bottom: 16px;
-    }
 }
 
 @media (max-width: 600px) {
     .headline {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .actions {

@@ -66,8 +66,8 @@
 
 @media (max-width: 768px) {
     .headline {
-        font-size: 1.75rem;
-        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
     }
 }
 
@@ -94,8 +94,9 @@
 
 @media (max-width: 768px) {
     .subheadline {
-        font-size: 1rem;
-        margin-bottom: 1.25rem;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
     }
 }
 
@@ -113,6 +114,13 @@
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .ctaButton {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
 .ctaButton:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(15, 92, 186, 0.3);
@@ -123,11 +131,40 @@
     order: 1;
 }
 
-width: 16rem;
-height: 16rem;
-background: rgba(15, 92, 186, 0.05);
-border-radius: 50%;
-filter: blur(60px);
+@media (min-width: 1024px) {
+    .imageWrapper {
+        order: 2;
+    }
+}
+
+.imageContainer {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    animation: float 6s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+    .imageContainer {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .imageContainer {
+        height: 500px;
+    }
+}
+
+.decorativeCircle1 {
+    position: absolute;
+    top: -2.5rem;
+    right: -2.5rem;
+    width: 16rem;
+    height: 16rem;
+    background: rgba(15, 92, 186, 0.05);
+    border-radius: 50%;
+    filter: blur(60px);
 }
 
 .decorativeCircle2 {
