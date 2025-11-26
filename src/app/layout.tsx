@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   description: "شركة حلول تقنية تقدم خدمات تصميم مواقع، تطبيقات، تصميم جرافيك، تسويق رقمي، وأتمتة.",
 };
 
+import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,6 +30,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       <body className={`${cairo.variable} ${inter.variable}`}>
         {children}
+        <FloatingWhatsApp />
       </body>
     </html>
   );

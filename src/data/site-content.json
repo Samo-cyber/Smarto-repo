@@ -405,7 +405,8 @@
                 "enabled": true,
                 "position": "bottom-right",
                 "size": "56px",
-                "color": "#25D366"
+                "color": "#25D366",
+                "phone": "201007501816"
             },
             "phone": {
                 "enabled": true,
