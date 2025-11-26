@@ -54,8 +54,6 @@ export const Footer = () => {
                         <div className={styles.column}>
                             <h4 className={styles.heading}>الشركة</h4>
                             <Link href="/about" className={styles.link}>من نحن</Link>
-                            <Link href="/careers" className={styles.link}>وظائف</Link>
-                            <Link href="/blog" className={styles.link}>المدونة</Link>
                             <Link href="/portfolio" className={styles.link}>أعمالنا</Link>
                         </div>
                         <div className={styles.column}>

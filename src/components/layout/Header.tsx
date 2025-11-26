@@ -39,8 +39,6 @@ export const Header = () => {
                     <Link href="/about" className={styles.link} onClick={() => setIsMobileMenuOpen(false)}>من نحن</Link>
                     <Link href="/services" className={styles.link} onClick={() => setIsMobileMenuOpen(false)}>خدماتنا</Link>
                     <Link href="/portfolio" className={styles.link} onClick={() => setIsMobileMenuOpen(false)}>أعمالنا</Link>
-                    <Link href="/blog" className={styles.link} onClick={() => setIsMobileMenuOpen(false)}>المدونة</Link>
-                    <Link href="/careers" className={styles.link} onClick={() => setIsMobileMenuOpen(false)}>الوظائف</Link>
                     <Link href="/contact" className={styles.link} onClick={() => setIsMobileMenuOpen(false)}>اتصل بنا</Link>
                 </nav>
 
