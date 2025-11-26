@@ -22,7 +22,7 @@ export const Header = () => {
     }, []);
 
     return (
-        <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
+        <header className={`${styles.header} ${isScrolled || isMobileMenuOpen ? styles.scrolled : ''}`}>
             <div className={`container ${styles.container}`}>
                 <Link href="/" className={styles.logo}>
                     <Image

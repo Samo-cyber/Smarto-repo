@@ -65,6 +65,9 @@ p {
 }
 
 @media (max-width: 600px) {
+  :root {
+    --header-height: 64px;
+  }
   .container {
     padding: 0 16px;
   }
