@@ -1,0 +1,73 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-cairo);
+}
+
+/* Variants */
+.primary {
+    background: linear-gradient(90deg, var(--brand-start), var(--brand-mid));
+    color: white;
+    box-shadow: 0 4px 15px rgba(15, 92, 186, 0.2);
+}
+
+.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(15, 92, 186, 0.3);
+}
+
+.secondary {
+    background: white;
+    color: var(--brand-dark);
+    border: 1px solid #E5E7EB;
+}
+
+.secondary:hover {
+    background: #F9FAFB;
+    border-color: #D1D5DB;
+}
+
+.ghost {
+    background: transparent;
+    color: var(--brand-dark);
+}
+
+.ghost:hover {
+    background: rgba(15, 92, 186, 0.05);
+}
+
+.outline {
+    background: transparent;
+    border: 2px solid var(--brand-mid);
+    color: var(--brand-mid);
+}
+
+.outline:hover {
+    background: var(--brand-mid);
+    color: white;
+}
+
+/* Sizes */
+.sm {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.md {
+    height: 48px;
+    padding: 0 24px;
+    font-size: 16px;
+}
+
+.lg {
+    height: 56px;
+    padding: 0 32px;
+    font-size: 18px;
+}

@@ -1,0 +1,34 @@
+import type { Metadata } from "next";
+import { Cairo, Inter } from "next/font/google";
+import "./globals.css";
+
+const cairo = Cairo({
+  subsets: ["arabic"],
+  variable: "--font-cairo",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "Smarto | حلول رقمية مبتكرة",
+  description: "شركة حلول تقنية تقدم خدمات تصميم مواقع، تطبيقات، تصميم جرافيك، تسويق رقمي، وأتمتة.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="ar" dir="rtl">
+      <body className={`${cairo.variable} ${inter.variable}`}>
+        {children}
+      </body>
+    </html>
+  );
+}

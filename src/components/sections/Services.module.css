@@ -1,0 +1,105 @@
+.section {
+    padding: 100px 0;
+    background-color: var(--surface);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 16px;
+    color: var(--text-heading);
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--text-body);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.iconWrapper {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* SVG Icon Styling with Brand Colors */
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .icon {
+    transform: scale(1.1);
+}
+
+.card:nth-child(3n+1) .icon {
+    color: var(--brand-start);
+}
+
+.card:nth-child(3n+2) .icon {
+    color: var(--brand-mid);
+}
+
+.card:nth-child(3n+3) .icon {
+    color: var(--brand-end);
+}
+
+.cardTitle {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.cardDesc {
+    font-size: 16px;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.link {
+    color: var(--brand-start);
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.2s;
+}
+
+.link:hover {
+    gap: 12px;
+}
+
+@media (max-width: 991px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

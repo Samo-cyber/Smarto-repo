@@ -1,0 +1,257 @@
+.section {
+    padding: 80px 0;
+}
+
+.sectionAlt {
+    padding: 80px 0;
+    background-color: var(--surface);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sectionTitle {
+    font-size: 36px;
+    margin-bottom: 16px;
+    color: var(--text-heading);
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--text-body);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Story Section */
+.storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.storyContent {
+    max-width: 540px;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-body);
+    margin-bottom: 20px;
+}
+
+.storyImage {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 40px;
+}
+
+.iconItem {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.iconItem:nth-child(1) {
+    color: var(--brand-start);
+}
+
+.iconItem:nth-child(2) {
+    color: var(--brand-mid);
+}
+
+.iconItem:nth-child(3) {
+    color: var(--brand-end);
+}
+
+.iconItem:nth-child(4) {
+    color: var(--brand-start);
+}
+
+.iconItem:hover {
+    transform: translateY(-8px);
+}
+
+/* Mission & Vision */
+.missionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.missionCard {
+    padding: 40px;
+    text-align: center;
+}
+
+.missionIcon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    background: linear-gradient(135deg, var(--brand-start) 0%, var(--brand-mid) 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.cardTitle {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: var(--text-heading);
+}
+
+.cardText {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-body);
+}
+
+/* Values */
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.valueCard {
+    text-align: center;
+    padding: 32px 20px;
+}
+
+.iconWrapper {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+    color: var(--brand-mid);
+}
+
+.valueTitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--text-heading);
+}
+
+.valueDesc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-body);
+}
+
+/* Stats Section */
+.statsSection {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--brand-start) 0%, var(--brand-mid) 100%);
+    color: white;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.statNumber {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.statLabel {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .storyGrid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .valuesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iconGrid {
+        padding: 20px;
+    }
+
+    .iconItem {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .missionGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .storyImage {
+        height: 300px;
+    }
+
+    .iconGrid {
+        gap: 16px;
+        padding: 10px;
+    }
+
+    .iconItem {
+        width: 80px;
+        height: 80px;
+    }
+
+    .iconItem svg {
+        width: 32px;
+        height: 32px;
+    }
+}

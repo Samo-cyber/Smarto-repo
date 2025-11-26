@@ -1,0 +1,257 @@
+.section {
+    padding: 80px 0;
+}
+
+/* Categories */
+.categoriesSection {
+    padding: 40px 0;
+    background-color: var(--surface);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.categories {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categoryBtn {
+    padding: 10px 24px;
+    border: 1px solid #e5e7eb;
+    background: white;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-body);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.categoryBtn:hover {
+    border-color: var(--brand-start);
+    color: var(--brand-start);
+}
+
+.categoryBtn.active {
+    background: var(--brand-start);
+    border-color: var(--brand-start);
+    color: white;
+}
+
+/* Posts Grid */
+.postsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.postCard {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.postCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.postIconWrapper {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--brand-start) 0%, var(--brand-mid) 50%, var(--brand-end) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.postIconWrapper::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.postContent {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.category {
+    display: inline-block;
+    background: var(--surface);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: var(--brand-start);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: fit-content;
+}
+
+.postTitle {
+    font-size: 20px;
+    color: var(--text-heading);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.postExcerpt {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-body);
+    flex: 1;
+}
+
+.postMeta {
+    display: flex;
+    gap: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+    flex-wrap: wrap;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--text-body);
+}
+
+.metaItem svg {
+    color: var(--brand-mid);
+}
+
+.readMore {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--brand-start);
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 8px;
+    transition: gap 0.2s;
+}
+
+.readMore:hover {
+    gap: 12px;
+}
+
+/* Newsletter */
+.newsletterSection {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--brand-start) 0%, var(--brand-mid) 100%);
+    color: white;
+}
+
+.newsletterContent {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletterTitle {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.newsletterText {
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: white;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.newsletterForm {
+    display: flex;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.emailInput {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.emailInput::placeholder {
+    color: #9ca3af;
+}
+
+.submitBtn {
+    padding: 14px 32px;
+    background: white;
+    color: var(--brand-start);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+    white-space: nowrap;
+}
+
+.submitBtn:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .postsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .postsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletterForm {
+        flex-direction: column;
+    }
+
+    .categories {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .postMeta {
+        gap: 12px;
+    }
+}

@@ -1,0 +1,40 @@
+.header {
+    padding: calc(var(--header-height) + 60px) 0 60px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--surface);
+}
+
+.title {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: var(--text-heading);
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--text-body);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(15, 92, 186, 0.08) 0%, transparent 70%);
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 36px;
+    }
+}

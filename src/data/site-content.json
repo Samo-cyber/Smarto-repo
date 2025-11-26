@@ -1,0 +1,542 @@
+{
+    "meta": {
+        "generated_for": "tech_solutions_company_website",
+        "description": "قالب JSON مفصّل بمستوى شركة تطوير مواقع محترفة — موقع شركة حلول تقنية تقدم: تصميم مواقع، تطبيقات، تصميمات، تسويق ديجيتال، وأتمتة. جاهز للرفع لمولد AI الذي يستقبل JSON ويولد التصميم/كود/أصول.",
+        "version": "1.0",
+        "language": "ar",
+        "direction": "rtl",
+        "notes": "غير company_name وsite_name وlogo_url قبل الرفع؛ استبدل UPLOAD_YOUR_LOGO_HERE برابط الشعار حينما ترغبه."
+    },
+    "identity": {
+        "site_name": "smarto-tech",
+        "company_name": "Smarto",
+        "logo_url": "public/assets/logo.png",
+        "favicon": "UPLOAD_YOUR_FAVICON_HERE",
+        "tagline": "حلول رقمية مبتكرة لتسريع أعمالك"
+    },
+    "theme": {
+        "source_inspiration": "colors derived from provided logo (blue → green → purple gradient)",
+        "primary_colors": {
+            "brand_start": "#0F5CBA",
+            "brand_mid": "#1DBF8A",
+            "brand_end": "#8A3DD9",
+            "brand_dark": "#0D3E7A",
+            "background": "#FFFFFF",
+            "surface": "#F6FBFF",
+            "muted_text": "#6B7280",
+            "heading": "#0F1724",
+            "accent": "#1DBF8A",
+            "cta_gradient": [
+                "#0F5CBA",
+                "#1DBF8A",
+                "#8A3DD9"
+            ],
+            "shadow": "rgba(15,23,36,0.06)"
+        },
+        "gradients": {
+            "hero": [
+                "#F0F8FF",
+                "#FFFFFF"
+            ],
+            "cta": [
+                "#0F5CBA",
+                "#1DBF8A"
+            ]
+        },
+        "icon_style": "filled-outline rounded (2px stroke or filled shapes)",
+        "illustration_style": "illustrator-vector-flat (clean vector shapes, soft gradients, isolated characters)",
+        "image_preferences": [
+            "svg",
+            "webp",
+            "avif"
+        ]
+    },
+    "typography": {
+        "primary_arabic_font": "Cairo, Tajawal, Noto Kufi Arabic, system-ui, sans-serif",
+        "primary_latin_font": "Inter, system-ui, sans-serif",
+        "weights": {
+            "regular": 400,
+            "medium": 500,
+            "semibold": 600,
+            "bold": 700
+        },
+        "scale": {
+            "h1": {
+                "desktop": "44px",
+                "tablet": "36px",
+                "mobile": "30px",
+                "weight": 600,
+                "line_height": "1.08"
+            },
+            "h2": {
+                "desktop": "32px",
+                "tablet": "28px",
+                "mobile": "24px",
+                "weight": 600,
+                "line_height": "1.12"
+            },
+            "h3": {
+                "desktop": "22px",
+                "tablet": "20px",
+                "mobile": "18px",
+                "weight": 600,
+                "line_height": "1.2"
+            },
+            "lead": {
+                "desktop": "18px",
+                "mobile": "16px",
+                "weight": 400,
+                "line_height": "1.6"
+            },
+            "body": {
+                "desktop": "16px",
+                "mobile": "14px",
+                "weight": 400,
+                "line_height": "1.6"
+            },
+            "small": {
+                "size": "13px",
+                "weight": 400
+            }
+        },
+        "letter_spacing": {
+            "headings": "0px",
+            "body": "0.1px"
+        }
+    },
+    "layout": {
+        "container_max_width": "1200px",
+        "grid_columns": 12,
+        "gutters": {
+            "desktop": "24px",
+            "tablet": "20px",
+            "mobile": "16px"
+        },
+        "breakpoints": {
+            "mobile_max": 599,
+            "tablet_min": 600,
+            "desktop_min": 992
+        },
+        "spacing_scale": {
+            "xxs": "4px",
+            "xs": "8px",
+            "sm": "12px",
+            "md": "16px",
+            "lg": "24px",
+            "xl": "40px"
+        }
+    },
+    "components": {
+        "header": {
+            "layout": "transparent on hero, solid on scroll",
+            "height": {
+                "desktop": "76px",
+                "mobile": "64px"
+            },
+            "logo_max_height": "48px",
+            "navigation": "desktop inline, mobile hamburger",
+            "cta_in_header": "primary (Hire us / Get quote)",
+            "aria": {
+                "role": "banner",
+                "nav_role": "navigation",
+                "menu_button_label": "فتح القائمة"
+            }
+        },
+        "hero": {
+            "layout": "two-column on desktop (text right, illustration left), centered single column mobile",
+            "padding": {
+                "top": "64px",
+                "bottom": "48px"
+            },
+            "content_width": "720px",
+            "headline": "نحوّل أفكارك الرقمية إلى واقع يحقق النجاح",
+            "subheadline": "نصمم مواقع وتطبيقات احترافية، ونقدم حلول تسويق رقمي وأتمتة تدفع أعمالك للأمام",
+            "primary_cta": {
+                "text": "اطلب عرض سعر",
+                "shape": "pill",
+                "height": "56px",
+                "font_size": "16px",
+                "gradient": [
+                    "#0F5CBA",
+                    "#1DBF8A"
+                ],
+                "shadow": "0 10px 30px rgba(15,23,36,0.08)"
+            },
+            "secondary_cta": {
+                "text": "اعرف المزيد",
+                "style": "ghost",
+                "height": "56px"
+            }
+        },
+        "services_section": {
+            "layout": "grid-3-desktop, grid-1-mobile",
+            "cards": {
+                "radius": "14px",
+                "padding": "20px",
+                "icon_size": "48px",
+                "title_style": "h3 token",
+                "desc_style": "body token",
+                "actions": "learn more"
+            },
+            "services": [
+                {
+                    "id": "web",
+                    "title": "تصميم وتطوير مواقع",
+                    "desc": "مواقع سريعة، متوافقة مع السيو، وتجربة مستخدم حديثة",
+                    "icon": "web"
+                },
+                {
+                    "id": "mobile",
+                    "title": "تطبيقات موبايل",
+                    "desc": "تطبيقات Android & iOS بأداء عالٍ وتجربة native",
+                    "icon": "mobile"
+                },
+                {
+                    "id": "design",
+                    "title": "تصميمات جرافيك",
+                    "desc": "هويات بصرية، واجهات، ومطبوعات جاهزة للطباعة",
+                    "icon": "design"
+                },
+                {
+                    "id": "marketing",
+                    "title": "تسويق ديجيتال",
+                    "desc": "سوشيال أدفرتايزنج، إدارة حملات، SEO",
+                    "icon": "marketing"
+                },
+                {
+                    "id": "automation",
+                    "title": "أتمتة وIntegrations",
+                    "desc": "أتمتة سير العمل وتكامل مع أنظمة الدفع وCRM",
+                    "icon": "automation"
+                }
+            ]
+        },
+        "portfolio": {
+            "layout": "masonry/grid gallery",
+            "items_per_page": 9,
+            "card_style": {
+                "image_ratio": "16:9",
+                "overlay": "soft gradient",
+                "title_position": "bottom-left"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "title": "منصة تعليمية ذكية",
+                    "category": "تطوير ويب",
+                    "image": "/assets/hero.png",
+                    "description": "منصة تعليمية متكاملة تدعم الفصول الافتراضية، تتبع تقدم الطلاب، ونظام اختبارات ذكي يعتمد على الذكاء الاصطناعي."
+                },
+                {
+                    "id": 2,
+                    "title": "تطبيق توصيل طلبات",
+                    "category": "تطبيقات موبايل",
+                    "image": "/assets/hero.png",
+                    "description": "تطبيق للهواتف الذكية يربط المستخدمين بالمتاجر المحلية مع ميزات التتبع المباشر وإدارة الطلبات للسائقين."
+                },
+                {
+                    "id": 3,
+                    "title": "لوحة تحكم مبيعات",
+                    "category": "أتمتة",
+                    "image": "/assets/hero.png",
+                    "description": "لوحة تحكم تفاعلية تعرض تحليلات المبيعات في الوقت الفعلي، مع تقارير مخصصة وتكامل مع أنظمة ERP."
+                },
+                {
+                    "id": 4,
+                    "title": "متجر إلكتروني متكامل",
+                    "category": "تطوير ويب",
+                    "image": "/assets/hero.png",
+                    "description": "متجر إلكتروني متعدد التجار يدعم بوابات الدفع المحلية، إدارة المخزون، ونظام ولاء العملاء."
+                },
+                {
+                    "id": 5,
+                    "title": "هوية بصرية لشركة عقارية",
+                    "category": "تصميم جرافيك",
+                    "image": "/assets/hero.png",
+                    "description": "تصميم هوية بصرية كاملة تشمل الشعار، المطبوعات، وتصميم واجهة المستخدم للموقع الإلكتروني لشركة عقارية رائدة."
+                },
+                {
+                    "id": 6,
+                    "title": "تطبيق إدارة مهام",
+                    "category": "تطبيقات موبايل",
+                    "image": "/assets/hero.png",
+                    "description": "تطبيق لزيادة الإنتاجية يساعد الفرق على تنظيم المهام، تحديد الأولويات، والتعاون بشكل فعال."
+                }
+            ]
+        },
+        "how_it_works": {
+            "style": "3-step horizontal (stack on mobile)",
+            "steps": [
+                {
+                    "title": "استشارة & تحليل",
+                    "desc": "نبدأ بفهم احتياجاتك ونقترح الحل الأمثل."
+                },
+                {
+                    "title": "تصميم & تنفيذ",
+                    "desc": "تصميم واجهات ثم تطوير مضبوط على القياس."
+                },
+                {
+                    "title": "إطلاق & دعم",
+                    "desc": "نطلق المشروع وندعمك بالتحديثات والتسويق."
+                }
+            ]
+        },
+        "testimonials": {
+            "style": "carousel or grid",
+            "avatar_circle": "48px",
+            "quote_style": "lead"
+        },
+        "pricing_plans": {
+            "layout": "cards grid",
+            "cta_text": "اطلب عرضًا مخصصًا",
+            "plans": [
+                {
+                    "name": "الباقة الأساسية",
+                    "price": "500$",
+                    "features": [
+                        "تصميم صفحة واحدة",
+                        "متجاوب مع الجوال",
+                        "دعم فني لمدة شهر",
+                        "استضافة مجانية"
+                    ],
+                    "recommended": false
+                },
+                {
+                    "name": "باقة الأعمال",
+                    "price": "1200$",
+                    "features": [
+                        "تصميم 5 صفحات",
+                        "لوحة تحكم",
+                        "SEO أساسي",
+                        "دعم فني 3 شهور",
+                        "بريد إلكتروني رسمي"
+                    ],
+                    "recommended": true
+                },
+                {
+                    "name": "باقة الشركات",
+                    "price": "مخصص",
+                    "features": [
+                        "عدد صفحات غير محدود",
+                        "تطوير مخصص",
+                        "SEO متقدم",
+                        "دعم فني 24/7",
+                        "نسخ احتياطي يومي"
+                    ],
+                    "recommended": false
+                }
+            ]
+        },
+        "contact": {
+            "form_fields": [
+                "الاسم",
+                "البريد الإلكتروني",
+                "رقم الهاتف",
+                "نوع الخدمة",
+                "نبذة عن المشروع",
+                "ملف مرفق (اختياري)"
+            ],
+            "field_height": "56px",
+            "submit_text": "أرسل الطلب",
+            "quick_contact": "WhatsApp floating, phone"
+        },
+        "footer": {
+            "background": "#F6FBFF",
+            "columns": 4,
+            "links_style": "small muted",
+            "copyright": "© 2025 Smarto. كل الحقوق محفوظة."
+        },
+        "floating_buttons": {
+            "whatsapp": {
+                "enabled": true,
+                "position": "bottom-right",
+                "size": "56px",
+                "color": "#25D366"
+            },
+            "phone": {
+                "enabled": true,
+                "position": "bottom-right",
+                "below_whatsapp": "true",
+                "size": "56px",
+                "color": "#6C8A97"
+            }
+        }
+    },
+    "illustrations_generation_instructions_for_AI_model": {
+        "style_description": "Create vector illustrations in a clean Illustrator-style: flat vector shapes, smooth curves, subtle gradients following brand gradient (blue→green→purple). Characters should be friendly, minimal facial features, and using the brand palette. Prefer isolated scenes on white/soft-surface backgrounds. Provide SVG + WEBP exports.",
+        "examples_of_assets_to_generate": [
+            {
+                "name": "hero-agency-scene",
+                "description": "A hero illustration showing a developer/designer team around a large screen and mobile device, calendar and charts visible, clean vector, brand gradient accents, left-aligned composition for RTL layout."
+            },
+            {
+                "name": "service-icons-set",
+                "description": "Set of 12 icons for services (web, mobile, design, marketing, automation, cloud, integration, support, analytics, ecommerce, payments, seo). Stylized as flat vector, 120x120 svg."
+            },
+            {
+                "name": "process-steps",
+                "description": "3 illustrations for the three steps (analysis, design, launch) — simple scenes, consistent character style."
+            }
+        ],
+        "export_requirements": "SVG (primary), WEBP fallback, provide 1x and 2x raster sizes, optimized for web. Each SVG must be color-tokenized (use CSS variables) so model can recolor per theme."
+    },
+    "pages": [
+        {
+            "name": "home",
+            "slug": "/",
+            "sections": [
+                "hero",
+                "services",
+                "portfolio_preview",
+                "how_it_works",
+                "testimonials",
+                "pricing_preview",
+                "contact_cta",
+                "footer"
+            ]
+        },
+        {
+            "name": "services",
+            "slug": "/services",
+            "sections": [
+                "services_grid",
+                "case_studies",
+                "benefits",
+                "cta_contact"
+            ]
+        },
+        {
+            "name": "portfolio",
+            "slug": "/portfolio",
+            "sections": [
+                "projects_gallery",
+                "case_studies",
+                "filter"
+            ]
+        },
+        {
+            "name": "pricing",
+            "slug": "/pricing",
+            "sections": [
+                "plans",
+                "faqs",
+                "contact"
+            ]
+        },
+        {
+            "name": "contact",
+            "slug": "/contact",
+            "sections": [
+                "contact_form",
+                "office_info",
+                "map"
+            ]
+        }
+    ],
+    "copy_ar": {
+        "home": {
+            "headline": "حلول رقمية مبتكرة تُدفَع بأداء",
+            "subheadline": "نصمم ونطوّر مواقع وتطبيقات، ونقدّم تصميمات وتسويق رقمي وأتمتة لتسريع عملك.",
+            "primary_cta": "اطلب عرضًا",
+            "secondary_cta": "شاهد أعمالنا"
+        },
+        "services": {
+            "web": {
+                "title": "تصميم وتطوير مواقع",
+                "desc": "مواقع سريعة، متوافقة مع السيو، وتجربة مستخدم حديثة."
+            },
+            "mobile": {
+                "title": "تطبيقات موبايل",
+                "desc": "تطبيقات Android & iOS بأداء عالٍ وتجربة native."
+            },
+            "design": {
+                "title": "تصميمات جرافيك",
+                "desc": "هويات بصرية وواجهات جذابة."
+            },
+            "marketing": {
+                "title": "تسويق ديجيتال",
+                "desc": "إعلانات سوشيال، إدارة حملات، وتحليل."
+            },
+            "automation": {
+                "title": "أتمتة الأنظمة",
+                "desc": "ربط الأدوات وأتمتة سير العمل لتقليل الأخطاء وتوفير الوقت."
+            }
+        },
+        "contact_form": {
+            "title": "أخبرنا عن مشروعك",
+            "subtitle": "املأ البيانات وسنتواصل معك خلال 24 ساعة.",
+            "success": "شكرًا! استلمنا طلبك وسنتواصل قريبًا."
+        }
+    },
+    "seo": {
+        "meta_template": {
+            "title": "{company_name} | حلول رقمية وتصميم مواقع وتطبيقات",
+            "description": "{company_name} شركة حلول تقنية تقدم خدمات تصميم مواقع، تطبيقات، تصميم جرافيك، تسويق رقمي، وأتمتة. اطلب عرضًا الآن."
+        },
+        "structured_data": "Include Organization, WebSite, and Service JSON-LD templates"
+    },
+    "accessibility": {
+        "roles": [
+            "banner",
+            "navigation",
+            "main",
+            "contentinfo",
+            "dialog",
+            "application"
+        ],
+        "keyboard": "Tab order logical, focus visible, skip-to-content link, aria-live for notifications",
+        "contrast": "AA minimum for body text, aim for AAA for headings where possible"
+    },
+    "developer_notes": {
+        "deliverables_expected": [
+            "design_spec (figma/json)",
+            "static_html_css_zip",
+            "react_components",
+            "svg_assets"
+        ],
+        "color_tokens": "All SVGs should use CSS variables for colors so generator can swap theme tokens.",
+        "asset_naming_convention": "use kebab-case, include size suffix (e.g., hero-agency-scene@1x.svg)"
+    },
+    "schema_for_generator": {
+        "required_input_fields": [
+            "site_name",
+            "company_name",
+            "site_type",
+            "language",
+            "direction",
+            "primary_colors",
+            "logo_url",
+            "pages",
+            "output_preferences"
+        ],
+        "example_input": {
+            "site_name": "smarto-tech",
+            "company_name": "Smarto Solutions",
+            "site_type": "company",
+            "language": "ar",
+            "direction": "rtl",
+            "primary_colors": {
+                "brand_start": "#0F5CBA",
+                "brand_mid": "#1DBF8A",
+                "brand_end": "#8A3DD9"
+            },
+            "logo_url": "UPLOAD_YOUR_LOGO_HERE",
+            "pages": [
+                "home",
+                "services",
+                "portfolio",
+                "contact"
+            ],
+            "output_preferences": {
+                "deliver_html_css": true,
+                "deliver_react": true,
+                "deliver_figma_spec": true,
+                "deliver_svg_assets": true
+            }
+        }
+    },
+    "final_steps": {
+        "instructions_for_user_before_upload": "1) غيّر company_name وsite_name وlogo_url إلى القيم النهائية. 2) لو عايز اللوجو يستخدم كـpalette حقيقي، ارفع الشعار في مكان URL أو ضع الرابط هنا. 3) ارفع الملف للمولد AI واطلب deliverables المذكورة.",
+        "want_me_to_generate_files_now": "respond 'اعملهم' لو عايزني أجهز ملفات JSON إضافية (store, landing, portfolio) بنفس التفاصيل وأرّكبهم كملفات جاهزة للتحميل."
+    }
+}
