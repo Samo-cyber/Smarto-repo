@@ -1,8 +1,14 @@
 .hero {
     position: relative;
-    padding: 8rem 0 5rem;
+    padding: 5rem 0 3rem;
     overflow: hidden;
     background: linear-gradient(to bottom, rgba(15, 92, 186, 0.03), transparent);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2.5rem 0 2rem;
+    }
 }
 
 .container {
@@ -13,16 +19,29 @@
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
 }
 
 @media (min-width: 1024px) {
     .grid {
         grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        gap: 1.5rem;
     }
 }
 
@@ -45,6 +64,13 @@
     color: var(--text-heading);
 }
 
+@media (max-width: 768px) {
+    .headline {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+}
+
 @media (min-width: 768px) {
     .headline {
         font-size: 3rem;
@@ -64,6 +90,13 @@
     line-height: 1.6;
     max-width: 48rem;
     margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .subheadline {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
 }
 
 .ctaButton {
@@ -90,34 +123,11 @@
     order: 1;
 }
 
-@media (min-width: 1024px) {
-    .imageWrapper {
-        order: 2;
-    }
-}
-
-.imageContainer {
-    position: relative;
-    height: 400px;
-    width: 100%;
-    animation: float 6s ease-in-out infinite;
-}
-
-@media (min-width: 768px) {
-    .imageContainer {
-        height: 500px;
-    }
-}
-
-.decorativeCircle1 {
-    position: absolute;
-    top: -2.5rem;
-    right: -2.5rem;
-    width: 16rem;
-    height: 16rem;
-    background: rgba(15, 92, 186, 0.05);
-    border-radius: 50%;
-    filter: blur(60px);
+width: 16rem;
+height: 16rem;
+background: rgba(15, 92, 186, 0.05);
+border-radius: 50%;
+filter: blur(60px);
 }
 
 .decorativeCircle2 {
