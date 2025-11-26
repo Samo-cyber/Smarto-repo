@@ -220,276 +220,329 @@
         "portfolio": {
             "layout": "masonry/grid gallery",
             "items_per_page": 9,
-            {
-                "title": "استشارة & تحليل",
-                "desc": "نبدأ بفهم احتياجاتك ونقترح الحل الأمثل."
+            "card_style": {
+                "image_ratio": "16:9",
+                "overlay": "soft gradient",
+                "title_position": "bottom-left"
             },
-            {
-                "title": "تصميم & تنفيذ",
-                "desc": "تصميم واجهات ثم تطوير مضبوط على القياس."
+            "items": [
+                {
+                    "id": 1,
+                    "title": "منصة تعليمية ذكية",
+                    "category": "تطوير ويب",
+                    "image": "/assets/portfolio-edu.png",
+                    "description": "منصة تعليمية متكاملة تدعم الفصول الافتراضية، تتبع تقدم الطلاب، ونظام اختبارات ذكي يعتمد على الذكاء الاصطناعي."
+                },
+                {
+                    "id": 2,
+                    "title": "تطبيق توصيل طلبات",
+                    "category": "تطبيقات موبايل",
+                    "image": "/assets/portfolio-edu.png",
+                    "description": "تطبيق للهواتف الذكية يربط المستخدمين بالمتاجر المحلية مع ميزات التتبع المباشر وإدارة الطلبات للسائقين."
+                },
+                {
+                    "id": 3,
+                    "title": "لوحة تحكم مبيعات",
+                    "category": "أتمتة",
+                    "image": "/assets/portfolio-edu.png",
+                    "description": "لوحة تحكم تفاعلية تعرض تحليلات المبيعات في الوقت الفعلي، مع تقارير مخصصة وتكامل مع أنظمة ERP."
+                },
+                {
+                    "id": 4,
+                    "title": "متجر إلكتروني متكامل",
+                    "category": "تطوير ويب",
+                    "image": "/assets/portfolio-edu.png",
+                    "description": "متجر إلكتروني متعدد التجار يدعم بوابات الدفع المحلية، إدارة المخزون، ونظام ولاء العملاء."
+                },
+                {
+                    "id": 5,
+                    "title": "هوية بصرية لشركة عقارية",
+                    "category": "تصميم جرافيك",
+                    "image": "/assets/portfolio-edu.png",
+                    "description": "تصميم هوية بصرية كاملة تشمل الشعار، المطبوعات، وتصميم واجهة المستخدم للموقع الإلكتروني لشركة عقارية رائدة."
+                },
+                {
+                    "id": 6,
+                    "title": "تطبيق إدارة مهام",
+                    "category": "تطبيقات موبايل",
+                    "image": "/assets/portfolio-edu.png",
+                    "description": "تطبيق لزيادة الإنتاجية يساعد الفرق على تنظيم المهام، تحديد الأولويات، والتعاون بشكل فعال."
+                }
+            ]
+        },
+        "how_it_works": {
+            "style": "3-step horizontal (stack on mobile)",
+            "steps": [
+                {
+                    "title": "استشارة & تحليل",
+                    "desc": "نبدأ بفهم احتياجاتك ونقترح الحل الأمثل."
+                },
+                {
+                    "title": "تصميم & تنفيذ",
+                    "desc": "تصميم واجهات ثم تطوير مضبوط على القياس."
+                },
+                {
+                    "title": "إطلاق & دعم",
+                    "desc": "نطلق المشروع وندعمك بالتحديثات والتسويق."
+                }
+            ]
+        },
+        "testimonials": {
+            "style": "carousel or grid",
+            "avatar_circle": "48px",
+            "quote_style": "lead"
+        },
+        "pricing_plans": {
+            "layout": "cards grid",
+            "cta_text": "اطلب عرضًا مخصصًا",
+            "plans": [
+                {
+                    "name": "الباقة الأساسية",
+                    "price": "500$",
+                    "features": [
+                        "تصميم صفحة واحدة",
+                        "متجاوب مع الجوال",
+                        "دعم فني لمدة شهر",
+                        "استضافة مجانية"
+                    ],
+                    "recommended": false
+                },
+                {
+                    "name": "باقة الأعمال",
+                    "price": "1200$",
+                    "features": [
+                        "تصميم 5 صفحات",
+                        "لوحة تحكم",
+                        "SEO أساسي",
+                        "دعم فني 3 شهور",
+                        "بريد إلكتروني رسمي"
+                    ],
+                    "recommended": true
+                },
+                {
+                    "name": "باقة الشركات",
+                    "price": "مخصص",
+                    "features": [
+                        "عدد صفحات غير محدود",
+                        "تطوير مخصص",
+                        "SEO متقدم",
+                        "دعم فني 24/7",
+                        "نسخ احتياطي يومي"
+                    ],
+                    "recommended": false
+                }
+            ]
+        },
+        "contact": {
+            "form_fields": [
+                "الاسم",
+                "البريد الإلكتروني",
+                "رقم الهاتف",
+                "نوع الخدمة",
+                "نبذة عن المشروع",
+                "ملف مرفق (اختياري)"
+            ],
+            "field_height": "56px",
+            "submit_text": "أرسل الطلب",
+            "quick_contact": "WhatsApp floating, phone"
+        },
+        "footer": {
+            "background": "#F6FBFF",
+            "columns": 4,
+            "links_style": "small muted",
+            "copyright": "© 2025 Smarto. كل الحقوق محفوظة."
+        },
+        "floating_buttons": {
+            "whatsapp": {
+                "enabled": true,
+                "position": "bottom-right",
+                "size": "56px",
+                "color": "#25D366"
             },
-            {
-                "title": "إطلاق & دعم",
-                "desc": "نطلق المشروع وندعمك بالتحديثات والتسويق."
+            "phone": {
+                "enabled": true,
+                "position": "bottom-right",
+                "below_whatsapp": "true",
+                "size": "56px",
+                "color": "#6C8A97"
             }
-        ]
+        }
     },
-    "testimonials": {
-        "style": "carousel or grid",
-        "avatar_circle": "48px",
-        "quote_style": "lead"
-    },
-    "pricing_plans": {
-        "layout": "cards grid",
-        "cta_text": "اطلب عرضًا مخصصًا",
-        "plans": [
+    "illustrations_generation_instructions_for_AI_model": {
+        "style_description": "Create vector illustrations in a clean Illustrator-style: flat vector shapes, smooth curves, subtle gradients following brand gradient (blue→green→purple). Characters should be friendly, minimal facial features, and using the brand palette. Prefer isolated scenes on white/soft-surface backgrounds. Provide SVG + WEBP exports.",
+        "examples_of_assets_to_generate": [
             {
-                "name": "الباقة الأساسية",
-                "price": "500$",
-                "features": [
-                    "تصميم صفحة واحدة",
-                    "متجاوب مع الجوال",
-                    "دعم فني لمدة شهر",
-                    "استضافة مجانية"
-                ],
-                "recommended": false
+                "name": "hero-agency-scene",
+                "description": "A hero illustration showing a developer/designer team around a large screen and mobile device, calendar and charts visible, clean vector, brand gradient accents, left-aligned composition for RTL layout."
             },
             {
-                "name": "باقة الأعمال",
-                "price": "1200$",
-                "features": [
-                    "تصميم 5 صفحات",
-                    "لوحة تحكم",
-                    "SEO أساسي",
-                    "دعم فني 3 شهور",
-                    "بريد إلكتروني رسمي"
-                ],
-                "recommended": true
+                "name": "service-icons-set",
+                "description": "Set of 12 icons for services (web, mobile, design, marketing, automation, cloud, integration, support, analytics, ecommerce, payments, seo). Stylized as flat vector, 120x120 svg."
             },
             {
-                "name": "باقة الشركات",
-                "price": "مخصص",
-                "features": [
-                    "عدد صفحات غير محدود",
-                    "تطوير مخصص",
-                    "SEO متقدم",
-                    "دعم فني 24/7",
-                    "نسخ احتياطي يومي"
-                ],
-                "recommended": false
+                "name": "process-steps",
+                "description": "3 illustrations for the three steps (analysis, design, launch) — simple scenes, consistent character style."
             }
-        ]
-    },
-    "contact": {
-        "form_fields": [
-            "الاسم",
-            "البريد الإلكتروني",
-            "رقم الهاتف",
-            "نوع الخدمة",
-            "نبذة عن المشروع",
-            "ملف مرفق (اختياري)"
         ],
-        "field_height": "56px",
-        "submit_text": "أرسل الطلب",
-        "quick_contact": "WhatsApp floating, phone"
+        "export_requirements": "SVG (primary), WEBP fallback, provide 1x and 2x raster sizes, optimized for web. Each SVG must be color-tokenized (use CSS variables) so model can recolor per theme."
     },
-    "footer": {
-        "background": "#F6FBFF",
-        "columns": 4,
-        "links_style": "small muted",
-        "copyright": "© 2025 Smarto. كل الحقوق محفوظة."
-    },
-    "floating_buttons": {
-        "whatsapp": {
-            "enabled": true,
-            "position": "bottom-right",
-            "size": "56px",
-            "color": "#25D366"
-        },
-        "phone": {
-            "enabled": true,
-            "position": "bottom-right",
-            "below_whatsapp": "true",
-            "size": "56px",
-            "color": "#6C8A97"
-        }
-    }
-},
-"illustrations_generation_instructions_for_AI_model": {
-    "style_description": "Create vector illustrations in a clean Illustrator-style: flat vector shapes, smooth curves, subtle gradients following brand gradient (blue→green→purple). Characters should be friendly, minimal facial features, and using the brand palette. Prefer isolated scenes on white/soft-surface backgrounds. Provide SVG + WEBP exports.",
-    "examples_of_assets_to_generate": [
+    "pages": [
         {
-            "name": "hero-agency-scene",
-            "description": "A hero illustration showing a developer/designer team around a large screen and mobile device, calendar and charts visible, clean vector, brand gradient accents, left-aligned composition for RTL layout."
+            "name": "home",
+            "slug": "/",
+            "sections": [
+                "hero",
+                "services",
+                "portfolio_preview",
+                "how_it_works",
+                "testimonials",
+                "pricing_preview",
+                "contact_cta",
+                "footer"
+            ]
         },
         {
-            "name": "service-icons-set",
-            "description": "Set of 12 icons for services (web, mobile, design, marketing, automation, cloud, integration, support, analytics, ecommerce, payments, seo). Stylized as flat vector, 120x120 svg."
+            "name": "services",
+            "slug": "/services",
+            "sections": [
+                "services_grid",
+                "case_studies",
+                "benefits",
+                "cta_contact"
+            ]
         },
         {
-            "name": "process-steps",
-            "description": "3 illustrations for the three steps (analysis, design, launch) — simple scenes, consistent character style."
+            "name": "portfolio",
+            "slug": "/portfolio",
+            "sections": [
+                "projects_gallery",
+                "case_studies",
+                "filter"
+            ]
+        },
+        {
+            "name": "pricing",
+            "slug": "/pricing",
+            "sections": [
+                "plans",
+                "faqs",
+                "contact"
+            ]
+        },
+        {
+            "name": "contact",
+            "slug": "/contact",
+            "sections": [
+                "contact_form",
+                "office_info",
+                "map"
+            ]
         }
     ],
-    "export_requirements": "SVG (primary), WEBP fallback, provide 1x and 2x raster sizes, optimized for web. Each SVG must be color-tokenized (use CSS variables) so model can recolor per theme."
-},
-"pages": [
-    {
-        "name": "home",
-        "slug": "/",
-        "sections": [
-            "hero",
-            "services",
-            "portfolio_preview",
-            "how_it_works",
-            "testimonials",
-            "pricing_preview",
-            "contact_cta",
-            "footer"
-        ]
-    },
-    {
-        "name": "services",
-        "slug": "/services",
-        "sections": [
-            "services_grid",
-            "case_studies",
-            "benefits",
-            "cta_contact"
-        ]
-    },
-    {
-        "name": "portfolio",
-        "slug": "/portfolio",
-        "sections": [
-            "projects_gallery",
-            "case_studies",
-            "filter"
-        ]
-    },
-    {
-        "name": "pricing",
-        "slug": "/pricing",
-        "sections": [
-            "plans",
-            "faqs",
-            "contact"
-        ]
-    },
-    {
-        "name": "contact",
-        "slug": "/contact",
-        "sections": [
-            "contact_form",
-            "office_info",
-            "map"
-        ]
-    }
-],
-"copy_ar": {
-    "home": {
-        "headline": "حلول رقمية مبتكرة تُدفَع بأداء",
-        "subheadline": "نصمم ونطوّر مواقع وتطبيقات، ونقدّم تصميمات وتسويق رقمي وأتمتة لتسريع عملك.",
-        "primary_cta": "اطلب عرضًا",
-        "secondary_cta": "شاهد أعمالنا"
-    },
-    "services": {
-        "web": {
-            "title": "تصميم وتطوير مواقع",
-            "desc": "مواقع سريعة، متوافقة مع السيو، وتجربة مستخدم حديثة."
+    "copy_ar": {
+        "home": {
+            "headline": "حلول رقمية مبتكرة تُدفَع بأداء",
+            "subheadline": "نصمم ونطوّر مواقع وتطبيقات، ونقدّم تصميمات وتسويق رقمي وأتمتة لتسريع عملك.",
+            "primary_cta": "اطلب عرضًا",
+            "secondary_cta": "شاهد أعمالنا"
         },
-        "mobile": {
-            "title": "تطبيقات موبايل",
-            "desc": "تطبيقات Android & iOS بأداء عالٍ وتجربة native."
+        "services": {
+            "web": {
+                "title": "تصميم وتطوير مواقع",
+                "desc": "مواقع سريعة، متوافقة مع السيو، وتجربة مستخدم حديثة."
+            },
+            "mobile": {
+                "title": "تطبيقات موبايل",
+                "desc": "تطبيقات Android & iOS بأداء عالٍ وتجربة native."
+            },
+            "design": {
+                "title": "تصميمات جرافيك",
+                "desc": "هويات بصرية وواجهات جذابة."
+            },
+            "marketing": {
+                "title": "تسويق ديجيتال",
+                "desc": "إعلانات سوشيال، إدارة حملات، وتحليل."
+            },
+            "automation": {
+                "title": "أتمتة الأنظمة",
+                "desc": "ربط الأدوات وأتمتة سير العمل لتقليل الأخطاء وتوفير الوقت."
+            }
         },
-        "design": {
-            "title": "تصميمات جرافيك",
-            "desc": "هويات بصرية وواجهات جذابة."
-        },
-        "marketing": {
-            "title": "تسويق ديجيتال",
-            "desc": "إعلانات سوشيال، إدارة حملات، وتحليل."
-        },
-        "automation": {
-            "title": "أتمتة الأنظمة",
-            "desc": "ربط الأدوات وأتمتة سير العمل لتقليل الأخطاء وتوفير الوقت."
+        "contact_form": {
+            "title": "أخبرنا عن مشروعك",
+            "subtitle": "املأ البيانات وسنتواصل معك خلال 24 ساعة.",
+            "success": "شكرًا! استلمنا طلبك وسنتواصل قريبًا."
         }
     },
-    "contact_form": {
-        "title": "أخبرنا عن مشروعك",
-        "subtitle": "املأ البيانات وسنتواصل معك خلال 24 ساعة.",
-        "success": "شكرًا! استلمنا طلبك وسنتواصل قريبًا."
-    }
-},
-"seo": {
-    "meta_template": {
-        "title": "{company_name} | حلول رقمية وتصميم مواقع وتطبيقات",
-        "description": "{company_name} شركة حلول تقنية تقدم خدمات تصميم مواقع، تطبيقات، تصميم جرافيك، تسويق رقمي، وأتمتة. اطلب عرضًا الآن."
-    },
-    "structured_data": "Include Organization, WebSite, and Service JSON-LD templates"
-},
-"accessibility": {
-    "roles": [
-        "banner",
-        "navigation",
-        "main",
-        "contentinfo",
-        "dialog",
-        "application"
-    ],
-    "keyboard": "Tab order logical, focus visible, skip-to-content link, aria-live for notifications",
-    "contrast": "AA minimum for body text, aim for AAA for headings where possible"
-},
-"developer_notes": {
-    "deliverables_expected": [
-        "design_spec (figma/json)",
-        "static_html_css_zip",
-        "react_components",
-        "svg_assets"
-    ],
-    "color_tokens": "All SVGs should use CSS variables for colors so generator can swap theme tokens.",
-    "asset_naming_convention": "use kebab-case, include size suffix (e.g., hero-agency-scene@1x.svg)"
-},
-"schema_for_generator": {
-    "required_input_fields": [
-        "site_name",
-        "company_name",
-        "site_type",
-        "language",
-        "direction",
-        "primary_colors",
-        "logo_url",
-        "pages",
-        "output_preferences"
-    ],
-    "example_input": {
-        "site_name": "smarto-tech",
-        "company_name": "Smarto Solutions",
-        "site_type": "company",
-        "language": "ar",
-        "direction": "rtl",
-        "primary_colors": {
-            "brand_start": "#0F5CBA",
-            "brand_mid": "#1DBF8A",
-            "brand_end": "#8A3DD9"
+    "seo": {
+        "meta_template": {
+            "title": "{company_name} | حلول رقمية وتصميم مواقع وتطبيقات",
+            "description": "{company_name} شركة حلول تقنية تقدم خدمات تصميم مواقع، تطبيقات، تصميم جرافيك، تسويق رقمي، وأتمتة. اطلب عرضًا الآن."
         },
-        "logo_url": "UPLOAD_YOUR_LOGO_HERE",
-        "pages": [
-            "home",
-            "services",
-            "portfolio",
-            "contact"
+        "structured_data": "Include Organization, WebSite, and Service JSON-LD templates"
+    },
+    "accessibility": {
+        "roles": [
+            "banner",
+            "navigation",
+            "main",
+            "contentinfo",
+            "dialog",
+            "application"
         ],
-        "output_preferences": {
-            "deliver_html_css": true,
-            "deliver_react": true,
-            "deliver_figma_spec": true,
-            "deliver_svg_assets": true
+        "keyboard": "Tab order logical, focus visible, skip-to-content link, aria-live for notifications",
+        "contrast": "AA minimum for body text, aim for AAA for headings where possible"
+    },
+    "developer_notes": {
+        "deliverables_expected": [
+            "design_spec (figma/json)",
+            "static_html_css_zip",
+            "react_components",
+            "svg_assets"
+        ],
+        "color_tokens": "All SVGs should use CSS variables for colors so generator can swap theme tokens.",
+        "asset_naming_convention": "use kebab-case, include size suffix (e.g., hero-agency-scene@1x.svg)"
+    },
+    "schema_for_generator": {
+        "required_input_fields": [
+            "site_name",
+            "company_name",
+            "site_type",
+            "language",
+            "direction",
+            "primary_colors",
+            "logo_url",
+            "pages",
+            "output_preferences"
+        ],
+        "example_input": {
+            "site_name": "smarto-tech",
+            "company_name": "Smarto Solutions",
+            "site_type": "company",
+            "language": "ar",
+            "direction": "rtl",
+            "primary_colors": {
+                "brand_start": "#0F5CBA",
+                "brand_mid": "#1DBF8A",
+                "brand_end": "#8A3DD9"
+            },
+            "logo_url": "UPLOAD_YOUR_LOGO_HERE",
+            "pages": [
+                "home",
+                "services",
+                "portfolio",
+                "contact"
+            ],
+            "output_preferences": {
+                "deliver_html_css": true,
+                "deliver_react": true,
+                "deliver_figma_spec": true,
+                "deliver_svg_assets": true
+            }
         }
+    },
+    "final_steps": {
+        "instructions_for_user_before_upload": "1) غيّر company_name وsite_name وlogo_url إلى القيم النهائية. 2) لو عايز اللوجو يستخدم كـpalette حقيقي، ارفع الشعار في مكان URL أو ضع الرابط هنا. 3) ارفع الملف للمولد AI واطلب deliverables المذكورة.",
+        "want_me_to_generate_files_now": "respond 'اعملهم' لو عايزني أجهز ملفات JSON إضافية (store, landing, portfolio) بنفس التفاصيل وأرّكبهم كملفات جاهزة للتحميل."
     }
-},
-"final_steps": {
-    "instructions_for_user_before_upload": "1) غيّر company_name وsite_name وlogo_url إلى القيم النهائية. 2) لو عايز اللوجو يستخدم كـpalette حقيقي، ارفع الشعار في مكان URL أو ضع الرابط هنا. 3) ارفع الملف للمولد AI واطلب deliverables المذكورة.",
-    "want_me_to_generate_files_now": "respond 'اعملهم' لو عايزني أجهز ملفات JSON إضافية (store, landing, portfolio) بنفس التفاصيل وأرّكبهم كملفات جاهزة للتحميل."
-}
 }
