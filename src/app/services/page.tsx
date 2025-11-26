@@ -6,73 +6,15 @@ import { Footer } from '@/components/layout/Footer';
 import { PageHeader } from '@/components/ui/PageHeader';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import { Globe, Smartphone, Palette, TrendingUp, Bot, CheckCircle, ArrowLeft } from 'lucide-react';
+import { CheckCircle, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import styles from './services.module.css';
 
+import content from '@/data/site-content.json';
+import Image from 'next/image';
+
 export default function ServicesPage() {
-    const services = [
-        {
-            icon: Globe,
-            title: 'تصميم وتطوير مواقع',
-            description: 'نصمم ونطور مواقع إلكترونية احترافية متجاوبة مع جميع الأجهزة، سريعة الأداء ومتوافقة مع محركات البحث.',
-            features: [
-                'تصميم واجهات مستخدم حديثة',
-                'تطوير متوافق مع SEO',
-                'أداء عالي وسرعة تحميل',
-                'لوحة تحكم سهلة الاستخدام'
-            ],
-            color: 'var(--brand-start)'
-        },
-        {
-            icon: Smartphone,
-            title: 'تطبيقات موبايل',
-            description: 'نبني تطبيقات موبايل native و cross-platform لنظامي iOS و Android بأعلى معايير الجودة والأداء.',
-            features: [
-                'تطبيقات iOS و Android',
-                'تجربة مستخدم سلسة',
-                'تكامل مع APIs',
-                'دعم فني مستمر'
-            ],
-            color: 'var(--brand-mid)'
-        },
-        {
-            icon: Palette,
-            title: 'تصميم جرافيك وهوية بصرية',
-            description: 'نصمم هويات بصرية متكاملة تعبر عن علامتك التجارية وتميزك عن المنافسين.',
-            features: [
-                'تصميم الشعارات',
-                'الهوية البصرية الكاملة',
-                'تصميم المطبوعات',
-                'تصميم واجهات UI/UX'
-            ],
-            color: 'var(--brand-end)'
-        },
-        {
-            icon: TrendingUp,
-            title: 'تسويق رقمي',
-            description: 'نساعدك في الوصول لجمهورك المستهدف وزيادة مبيعاتك من خلال استراتيجيات تسويق رقمي فعالة.',
-            features: [
-                'إدارة حملات إعلانية',
-                'تحسين محركات البحث SEO',
-                'إدارة وسائل التواصل',
-                'تحليل البيانات والتقارير'
-            ],
-            color: 'var(--brand-start)'
-        },
-        {
-            icon: Bot,
-            title: 'أتمتة وتكامل الأنظمة',
-            description: 'نساعدك في أتمتة العمليات وتكامل الأنظمة المختلفة لتوفير الوقت وزيادة الكفاءة.',
-            features: [
-                'أتمتة سير العمل',
-                'تكامل مع أنظمة CRM',
-                'ربط بوابات الدفع',
-                'تكامل APIs'
-            ],
-            color: 'var(--brand-mid)'
-        }
-    ];
+    const { services } = content.components.services_section;
 
     const benefits = [
         'فريق محترف ذو خبرة',
@@ -97,16 +39,21 @@ export default function ServicesPage() {
                     <div className="container">
                         <div className={styles.servicesGrid}>
                             {services.map((service, index) => {
-                                const IconComponent = service.icon;
                                 return (
-                                    <Card key={index} className={styles.serviceCard}>
-                                        <div className={styles.iconWrapper} style={{ background: service.color }}>
-                                            <IconComponent size={32} strokeWidth={1.5} />
+                                    <Card key={service.id} className={styles.serviceCard}>
+                                        <div className={styles.iconWrapper}>
+                                            <Image
+                                                src={service.image}
+                                                alt={service.title}
+                                                width={64}
+                                                height={64}
+                                                style={{ objectFit: 'contain' }}
+                                            />
                                         </div>
                                         <h3 className={styles.serviceTitle}>{service.title}</h3>
-                                        <p className={styles.serviceDesc}>{service.description}</p>
+                                        <p className={styles.serviceDesc}>{service.desc}</p>
                                         <ul className={styles.featuresList}>
-                                            {service.features.map((feature, idx) => (
+                                            {service.features && service.features.map((feature, idx) => (
                                                 <li key={idx} className={styles.featureItem}>
                                                     <CheckCircle size={16} />
                                                     <span>{feature}</span>
