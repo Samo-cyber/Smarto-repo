@@ -31,6 +31,7 @@ export const Footer = () => {
                             width={180}
                             height={60}
                             className={styles.logo}
+                            style={{ height: 'auto' }}
                         />
                         <p className={styles.tagline}>{identity.tagline}</p>
                         <div className={styles.social}>
