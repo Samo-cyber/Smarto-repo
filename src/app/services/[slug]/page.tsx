@@ -9,6 +9,8 @@ import { ServicePortfolio } from '@/components/services/ServicePortfolio';
 import { ServiceTestimonials } from '@/components/services/ServiceTestimonials';
 import { ServiceFAQ } from '@/components/services/ServiceFAQ';
 import { ServiceFinalCTA } from '@/components/services/ServiceFinalCTA';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
 
 export async function generateStaticParams() {
     return content.components.services_section.services.map((service) => ({
@@ -16,9 +18,28 @@ export async function generateStaticParams() {
     }));
 }
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
     const service = content.components.services_section.services.find(
-        (s) => s.id === params.slug
+        (s) => s.id === slug
+    );
+
+    if (!service) {
+        return {
+            title: '404 - الصفحة غير موجودة',
+        };
+    }
+
+    return {
+        title: `${service.title} | Smarto`,
+        description: service.desc,
+    };
+}
+
+export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const service = content.components.services_section.services.find(
+        (s) => s.id === slug
     );
 
     if (!service || !service.details) {
@@ -28,35 +49,39 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     const { details } = service;
 
     return (
-        <main className="min-h-screen">
-            <ServiceHero
-                headline={details.hero.headline}
-                subheadline={details.hero.subheadline}
-                ctaText={details.hero.cta_text}
-                image={details.hero.image}
-            />
+        <>
+            <Header />
+            <main className="min-h-screen">
+                <ServiceHero
+                    headline={details.hero.headline}
+                    subheadline={details.hero.subheadline}
+                    ctaText={details.hero.cta_text}
+                    image={details.hero.image}
+                />
 
-            <ServiceDefinition
-                description={details.definition.description}
-                problemPoints={details.definition.problem_points}
-            />
+                <ServiceDefinition
+                    description={details.definition.description}
+                    problemPoints={details.definition.problem_points}
+                />
 
-            <ServiceFeatures features={details.features} />
+                <ServiceFeatures features={details.features} />
 
-            <ServiceSteps steps={details.steps} />
+                <ServiceSteps steps={details.steps} />
 
-            <ServicePricing plans={details.pricing} />
+                <ServicePricing plans={details.pricing} />
 
-            <ServicePortfolio items={details.portfolio} />
+                <ServicePortfolio items={details.portfolio} />
 
-            <ServiceTestimonials testimonials={details.testimonials} />
+                <ServiceTestimonials testimonials={details.testimonials} />
 
-            <ServiceFAQ faq={details.faq} />
+                <ServiceFAQ faq={details.faq} />
 
-            <ServiceFinalCTA
-                title={details.final_cta.title}
-                buttonText={details.final_cta.button_text}
-            />
-        </main>
+                <ServiceFinalCTA
+                    title={details.final_cta.title}
+                    buttonText={details.final_cta.button_text}
+                />
+            </main>
+            <Footer />
+        </>
     );
 }
