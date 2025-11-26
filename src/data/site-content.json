@@ -135,7 +135,7 @@
             },
             "logo_max_height": "48px",
             "navigation": "desktop inline, mobile hamburger",
-            "cta_in_header": "primary (Hire us / Get quote)",
+            "cta_in_header": "اطلب عرض اسعار",
             "aria": {
                 "role": "banner",
                 "nav_role": "navigation",
