@@ -73,13 +73,30 @@
 }
 
 @media (max-width: 600px) {
+    .section {
+        padding: 60px 0;
+    }
+
     .header {
         flex-direction: column;
         gap: 24px;
         text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .title {
+        font-size: 28px;
     }
 
     .grid {
         grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /* Ensure content is visible on touch devices or always visible */
+    .content {
+        opacity: 1;
+        transform: translateY(0);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), transparent);
     }
 }

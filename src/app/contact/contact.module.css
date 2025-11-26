@@ -149,11 +149,23 @@
 }
 
 @media (max-width: 600px) {
+    .infoSection {
+        padding: 60px 0;
+    }
+
     .infoGrid {
         grid-template-columns: 1fr;
     }
 
+    .formSection {
+        padding: 60px 0;
+    }
+
     .formTitle {
         font-size: 28px;
+    }
+
+    .submitBtn {
+        width: 100%;
     }
 }

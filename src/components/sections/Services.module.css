@@ -95,11 +95,25 @@
 @media (max-width: 991px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
 }
 
 @media (max-width: 600px) {
+    .section {
+        padding: 60px 0;
+    }
+
     .grid {
         grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 16px;
     }
 }

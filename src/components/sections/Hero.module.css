@@ -78,28 +78,48 @@
 @media (max-width: 991px) {
     .hero {
         padding-top: calc(var(--header-height) + 40px);
+        padding-bottom: 60px;
         text-align: center;
+        min-height: auto;
     }
 
     .container {
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 40px;
     }
 
     .content {
         margin: 0 auto;
+        padding: 0 20px;
     }
 
     .subheadline {
         margin-left: auto;
         margin-right: auto;
+        font-size: 18px;
     }
 
     .actions {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .headline {
-        font-size: 36px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .headline {
+        font-size: 28px;
+    }
+
+    .actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .actions button {
+        width: 100%;
     }
 }
